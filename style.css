@@ -1,0 +1,301 @@
+@font-face {
+    font-family: australia;
+    src: url(Australia\ Custom\ Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(45, 0, 247, 1) 0%, rgba(242, 0, 137, 1) 80%);
+    min-height: 100vh;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.logo {
+    font-family: australia;
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 10vh; 
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+.nav-list a:hover {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.eu img {
+    border-radius: 0 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+mark {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.container2 {
+    background-color: #fff;
+    
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.sobre {
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+.sobre p {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.fer {
+    margin: 100px 60px;
+}
+
+.tud {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.tud div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid #fff;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.fer h1 {
+    font-size: 70px;
+}
+
+.tud img  {
+    width: 80px;
+    height: 120px;
+}
+
+.tud div:hover {
+    transform:scale(0.9);
+}
+
+.cur {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 25px;
+}
+
+.conteudo {
+    background-color: #fff;
+    width: 600px;
+    padding: 30px;
+}
+
+.conteudo p {
+    font-size: 17px;
+    margin: 10px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.text {
+    background-color: #fff;
+    padding: 10px 110px;
+    text-align: justify;
+}
+
+.text h1 {
+    margin-bottom: 30px;
+}
+
+.text p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.tdsCard {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5%;
+    margin: 40px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card p {
+    padding: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card img {
+    margin: 25px;
+    width: 250px;
+    height: 200px;    
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 7px;
+    border-radius: 10%;
+    font-size: 15px;
+    margin: 10px 103px;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: translateY(-10px);
+
+}
+
+footer {
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    min-height: 80px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    position: relative;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social a {
+    font-size: 25px;
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.social a:hover {
+    transform: translateY(-10px);
+}
+
+@media(max-width:800px){
+    header .nav-list {
+        position: absolute;
+        text-align: center;
+        height: 100px;
+        width: 270px;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        display: none;
+    }
+    
+    .nav-list li {
+        padding: 5px;
+    }
+
+    #menu-bar:checked ~ .nav-list {
+        display: initial;
+    }
+    header label {
+        display: initial;
+    }
+}
